@@ -4,4 +4,24 @@
   <div>There is nothing to see, literally!</div>
 }
 
+@if (user1.role === 'developer') {
+  <div>Developer</div>
+} @else if (user1.role === 'titan killer') {
+  <div>Titan Killer</div>
+} @else {
+  <div>I mean, its allright.</div>
+}
+
+@switch (user2.role) {
+  @case ('developer') {
+    <div>Developer</div>
+  }
+  @case ('titan killer') {
+    <div>Titan Killer</div>
+  }
+  @case ('housekeeping') {
+    <div>I mean, its allright.</div>
+  }
+}
+
 <router-outlet></router-outlet>

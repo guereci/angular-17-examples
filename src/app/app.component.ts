@@ -12,8 +12,11 @@ import { UserInterface } from './interfaces/UserInterface'
 })
 export class AppComponent {
   users = signal<UserInterface[]>([
-    { id: '1', name: 'fatih', role: 'developer' },
-    { id: '2', name: 'eren', role: 'titan killer' },
-    { id: '3', name: 'mikasa', role: 'housekeeping' },
+    { id: '1', name: 'Fatih', role: 'developer' },
+    { id: '2', name: 'Eren', role: 'titan killer' },
+    { id: '3', name: 'Mikasa', role: 'housekeeping' },
   ])
+
+  user1 = this.users()[1] //data for if example
+  user2 = this.users()[2] //data for switch example
 }
