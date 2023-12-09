@@ -24,4 +24,17 @@
   }
 }
 
+@defer (on viewport) {
+  <div>Defer</div>
+}
+@loading (after 300ms; minimum 300ms) {
+  <div>Loading...</div>
+}
+@placeholder (minimum 300ms) {
+  <div>Placeholder</div>
+}
+@error {
+  <div>Error</div>
+}
+
 <router-outlet></router-outlet>
